@@ -1,0 +1,653 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    background-image: linear-gradient(black 90%, #021322, #02253f);
+}
+
+.nav1,
+.nav-strt,
+.nav-midle,
+img,
+#More-info,
+.gold,
+.left-sec,
+#play,
+.left-end {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    margin-left: 40px;
+
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 45px;
+    position: fixed;
+    z-index: 999;
+    background-image: linear-gradient(#121212 60%, #12121284, transparent);
+    color: rgba(255, 255, 255, 0.84);
+    font-size: 13.5px;
+}
+
+img {
+    width: 30px;
+    height: 30px;
+}
+
+.nav1 {
+    gap: 60px;
+}
+
+.nav-strt {
+    gap: 5px;
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+.nav-midle {
+    gap: 30px;
+    transition: 0.4s;
+}
+
+.nav-midle i {
+    color: #0079ff;
+}
+
+.gold {
+    border: 1px solid gold;
+    font-size: 8px;
+    font-weight: bold;
+    border-radius: 50px;
+    padding: 5px;
+    height: 10px;
+}
+
+.gold img {
+    height: 18px;
+    width: 18px;
+}
+
+.nav-end {
+    gap: 25px;
+    padding-right: 50px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.nav-strt:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.nav-midle div:hover {
+    color: #004697;
+    cursor: pointer;
+}
+
+.nav-end div:hover {
+    color: #004697;
+    cursor: pointer;
+}
+
+.nav-end i:hover {
+    color: #004697;
+    cursor: pointer;
+}
+
+.sub-menu {
+    display: none;
+}
+
+.shows1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.shows:hover .sub-menu {
+    color: white;
+    display: block;
+    position: absolute;
+    border: 1px solid #727272;
+    height: 190px;
+    width: 110px;
+    margin-top: 2px;
+    margin-left: -25px;
+    border-radius: 8px;
+    background-color: rgb(35, 33, 33);
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+.sub-menu p:hover {
+    color: #004697;
+    cursor: pointer;
+}
+
+.sub-menu p {
+    margin: 15px;
+    font-size: 17px;
+}
+
+.movies1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.movies:hover .sub-menu {
+    color: white;
+    display: block;
+    position: absolute;
+    border: 1px solid #727272;
+    height: 190px;
+    width: 110px;
+    margin-top: 2px;
+    opacity: 0.9;
+    margin-left: -25px;
+    border-radius: 8px;
+    background-color: rgb(35, 33, 33);
+    cursor: pointer;
+}
+
+.music1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.music:hover .sub-menu {
+    color: white;
+    display: block;
+    position: absolute;
+    border: 1px solid #727272;
+    height: 190px;
+    width: 110px;
+    opacity: 0.9;
+    margin-top: 2px;
+    margin-left: -25px;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: rgb(35, 33, 33);
+}
+
+#img-sec {
+    background-image: url(./images/test1.webp);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 600px;
+}
+
+#img {
+    display: flex;
+    width: 100%;
+    height: 320px;
+    justify-content: center;
+}
+
+#img img {
+    width: 600px;
+    height: 320px;
+}
+
+.left-sec {
+    color: white;
+    width: 50%;
+    height: 100%;
+    flex-direction: column;
+    background-image: linear-gradient(to right, #121212, rgba(0, 0, 0, 0.901), transparent);
+    gap: 60px;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+#genre {
+    font-size: 12px;
+    color: rgb(216, 185, 11);
+}
+
+#story {
+    margin-top: 10px;
+    font-size: 17px;
+}
+
+#play {
+    background-color: #0269ce;
+    width: 80px;
+    height: 40px;
+    gap: 5px;
+    border-radius: 5px;
+}
+
+#More-info {
+    background-color: #241f1e;
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+}
+
+#play:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+#More-info:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+#list:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.left-end {
+    gap: 30px;
+}
+
+.sec2 {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.card {
+    display: flex;
+    gap: 10px;
+    height: 330px;
+    width: 270px;
+    border-radius: 10px;
+    background-position: center center;
+    background-size: cover;
+}
+
+.cards {
+    display: flex;
+    gap: 10px;
+}
+
+#card1 {
+    background-image: url(./images/card1.webp);
+}
+
+#card2 {
+    background-image: url(./images/card2.webp);
+}
+
+#card3 {
+    background-image: url(./images/card3.webp);
+}
+
+#card4 {
+    background-image: url(./images/card4.webp);
+}
+
+#card5 {
+    background-image: url(./images/card5.webp);
+}
+
+#card6 {
+    background-image: url(./images/card6.webp);
+}
+
+#card7 {
+    background-image: url(./images/card7.webp);
+}
+
+#card8 {
+    background-image: url(./images/card8.webp);
+}
+
+.trending {
+    display: flex;
+    align-items: flex-end;
+    justify-content: start;
+    gap: 8px;
+    padding-top: 40px;
+}
+
+.span {
+    color: #0079ff;
+    cursor: pointer;
+    gap: 10px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.span i {
+    font-size: 25px;
+}
+
+#view {
+    display: none;
+}
+
+.span:hover #view {
+    display: flex;
+    color: #0079ff;
+}
+
+
+.hidncard {
+    height: 350px;
+    width: 270px;
+    display: flex;
+    border-radius: 10px;
+    flex-direction: column;
+    background-image: linear-gradient(#021322 60%, #02253f, #013964);
+    box-shadow: 2px 5px 25px #121212;
+}
+
+.hidncard-mid {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 8px;
+    margin: 8px;
+}
+
+#hidncard img {
+    width: 100%;
+    height: 200px;
+    object-fit: fill;
+    border-radius: 6px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+}
+
+#hidncard-play {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 8px;
+    font-size: 13px;
+}
+
+#hidncard-play .i:hover {
+    transform: scale(1.1);
+}
+
+#hidncard-play .i {
+    background-color: #0269ce;
+    width: 60px;
+    transition: 0.2s;
+    height: 30px;
+    gap: 5px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#hidncard-span {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 5px;
+}
+
+#p {
+    visibility: hidden;
+    width: 90px;
+    background-color: black;
+    color: #fff;
+    right: 10%;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    font-size: 12px;
+    position: absolute;
+    z-index: 1;
+}
+
+#plus:hover #p {
+    visibility: visible;
+}
+
+#p1 {
+    visibility: hidden;
+    width: 90px;
+    background-color: black;
+    color: #fff;
+    top: 55%;
+    left: 85%;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    font-size: 12px;
+    position: absolute;
+    z-index: 1;
+}
+
+#error:hover #p1 {
+    visibility: visible;
+}
+
+
+.hidncard-end {
+    display: flex;
+    flex-direction: column;
+    padding-top: 13px;
+    gap: 10px;
+    margin: 8px;
+}
+
+#hidncard-end1 {
+    font-size: 10px;
+}
+
+#hidncard-end2 {
+    font-size: 10px;
+    border: 1px solid #fff;
+    width: fit-content;
+    padding: 7px;
+}
+
+.card {
+    transition: 0.3s;
+
+}
+
+.card:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.hidncard {
+    display: none;
+}
+
+.card:hover .hidncard {
+    display: block;
+    position: absolute;
+    overflow: visible;
+}
+
+footer {
+    padding-top: 50px;
+    padding-right: 50px;
+}
+
+.footer-strt {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    opacity: 0.8;
+    font-size: 13px;
+}
+
+.footer-strt div>h4 {
+    margin-bottom: 10px;
+}
+
+.footer-strt div>p:hover {
+    color: #0575f5;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #117cf5;
+    padding: 15px;
+
+}
+
+form button {
+    outline: none;
+    color: #0079ff;
+    background-color: transparent;
+    font-size: 13px;
+    border: transparent;
+}
+
+.footer-mid {
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+    font-size: 13px;
+    opacity: 0.8;
+}
+
+.footer-end {
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+    font-size: 13px;
+    opacity: 0.9;
+}
+
+.footer-end-strt {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 450px;
+    gap: 20px;
+}
+
+.footer-end-strt-mx {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 17px;
+}
+
+.footer-end-strt-icon {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    font-size: 13px;
+}
+
+.footer-end-strt-icon i:hover{
+    transform: scale(1.2);
+}
+
+.footer-end-mid {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    opacity: 0.8;
+    padding-bottom: 25px;
+}
+
+.footer-end-end h3{
+    opacity: 0.8;
+}
+
+.footer-end-mid p:hover{
+    color: #0779fc;
+    transform: scale(1.1);
+}
+
+.footer-end-end {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer-end-end-icons {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.footer-end-end-icons i:hover{
+    transform: scale(1.2);
+}
+
+.footer-end-end-icons div {
+    display: flex;
+    align-items: center;;
+    font-size: 13px;
+    justify-content: start;
+    gap: 10px;
+}
+
+.footer-end-end .line {
+    display: flex;
+    flex-direction: column;
+    width: 160px;
+    font-size: 11px;
+    gap: 13px;
+}
+
+.footer-end-end img {
+    width: 80px;
+    height: 80px;
+}
+
+.main-end1 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    opacity: 0.8;
+}
+
+.main-end {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.hr-line{
+    opacity: 0.2;
+    border: 0.1px solid white;
+    width: 100%;
+
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 15px;
+    font-size: 12px;
+}
+
+.footer-bottom div {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.footer-bottom div img {
+    width: 80px;
+    height: 20px;
+}
